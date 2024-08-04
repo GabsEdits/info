@@ -49,7 +49,7 @@ jobs:
         run: pnpm install
 
       - name: Generate feed
-        run: node ./scripts/generateFeed.cjs
+        run: node ./scripts/generateUpdatesFeed.cjs
 
       - name: Commit and push
         if: github.repository == 'vanilla-os/info' && github.ref == 'refs/heads/main'
